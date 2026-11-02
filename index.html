@@ -1,431 +1,96 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Mercado &amp; Forrajera San Benito | Sucursal San Roque, Juárez N.L.</title>
-  <meta name="description" content="Forrajera, abarrotes y veterinaria en Carretera a San Roque, Juárez N.L. Alimento para granja, mascotas, medicamentos veterinarios y más. Pedidos por WhatsApp." />
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forrajera San Benito · Mascotas y granja en Guadalupe NL</title>
+<style>
+:root{--g:#1f7a4d;--g2:#e8f5ee;--o:#f59e0b;--ink:#1c2321;--mut:#5b6663;--wa:#25d366}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fafaf7}
+a{color:inherit;text-decoration:none}.w{max-width:1100px;margin:auto;padding:0 16px}
+.demo{background:#fff4d6;font-size:12px;text-align:center;padding:5px}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:5}
+.hb{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;max-width:1100px;margin:auto}
+.logo{font-weight:800;font-size:19px;color:var(--g)}.logo small{display:block;font-size:11px;color:var(--mut);font-weight:500}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:13px 20px;border-radius:12px;font-weight:700;min-height:48px}
+.btn.wa{background:var(--wa)}.btn.ol{background:#fff;color:var(--g);border:2px solid var(--g)}
+nav.sp{display:flex;gap:8px;overflow-x:auto;padding:8px 16px;max-width:1100px;margin:auto}
+nav.sp a{flex:0 0 auto;background:var(--g2);color:var(--g);padding:9px 14px;border-radius:99px;font-weight:600;font-size:14px}
+.hero{background:linear-gradient(135deg,#1f7a4d,#2f9e66);color:#fff;padding:36px 0}
+.hero .w{display:grid;gap:20px;align-items:center}.hero h1{font-size:32px;line-height:1.1;margin:0 0 10px}
+.hero p{opacity:.95;font-size:17px}.pets{font-size:84px;text-align:center;line-height:1}.pets small{display:block;font-size:34px;opacity:.85;margin-top:8px}
+.tag{display:inline-block;background:rgba(255,255,255,.18);padding:5px 10px;border-radius:99px;font-size:13px;margin-bottom:10px}
+section{padding:34px 0}h2{font-size:24px;margin:0 0 6px}.sub{color:var(--mut);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cat{background:#fff;border-radius:16px;padding:18px 12px;text-align:center;box-shadow:0 2px 8px #0001;font-weight:700}
+.cat span{display:block;font-size:44px}.cat.sec{opacity:.9;background:#f4f1e8}
+.card{background:#fff;border-radius:16px;padding:14px;box-shadow:0 2px 8px #0001;display:flex;flex-direction:column}
+.card .im{font-size:40px;background:var(--g2);border-radius:12px;text-align:center;padding:14px}
+.card b{margin-top:8px}.card .br{font-size:12px;color:var(--mut)}.pr{font-size:20px;font-weight:800;color:var(--g);margin:6px 0}
+.pr small{font-size:11px;color:var(--mut);font-weight:500}.card a{margin-top:auto;text-align:center;background:var(--wa);color:#fff;border-radius:10px;padding:10px;font-weight:700;font-size:14px}
+.vet{background:#fff;border-radius:20px;padding:22px;border-left:6px solid var(--o)}
+.pend{background:#fff4d6;padding:3px 8px;border-radius:6px;font-size:13px}
+.brands{display:flex;flex-wrap:wrap;gap:8px}.brands span{background:#fff;border:1px solid #ddd;padding:8px 12px;border-radius:10px;font-weight:600;font-size:14px}
+.steps{display:grid;gap:10px}.steps div{background:#fff;padding:14px;border-radius:12px}
+footer{background:var(--ink);color:#ddd;padding:28px 0 90px;font-size:14px}
+.fab{position:fixed;right:16px;bottom:16px;background:var(--wa);color:#fff;border-radius:99px;padding:15px 20px;font-weight:800;box-shadow:0 6px 18px #0004;z-index:9}
+@media(min-width:760px){.hero .w{grid-template-columns:1.3fr 1fr}.hero h1{font-size:46px}.grid{grid-template-columns:repeat(4,1fr)}.steps{grid-template-columns:repeat(3,1fr)}}
+</style></head><body>
+<div class="demo">Demo — datos a confirmar con Gloria</div>
+<header><div class="hb"><a class="logo" href="#">🐾 Forrajera San Benito<small>Guadalupe · Juárez NL</small></a>
+<a class="btn wa" style="padding:10px 14px;min-height:0" href="https://wa.me/528129140676?text=Hola%20Forrajera%20San%20Benito">Pedir</a></div>
+<nav class="sp"><a href="#perros">🐶 Perros</a><a href="#gatos">🐱 Gatos</a><a href="#vet">🩺 Veterinario</a><a href="#aves">🐔 Aves / granja</a><a href="#ganado">🐄 Bovinos / caballos</a><a href="#envio">🛵 Envío</a></nav></header>
 
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tipografía -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<div class="hero"><div class="w"><div>
+<span class="tag">Croquetas · Veterinario · Forraje</span>
+<h1>Todo para tu perro y tu gato, a la vuelta de tu casa</h1>
+<p>Croquetas de las mejores marcas, médico veterinario en tienda y también alimento para aves, ganado y caballos. Pide por WhatsApp y te lo llevamos.</p>
+<a class="btn wa" href="https://wa.me/528129140676?text=Hola%2C%20quiero%20hacer%20un%20pedido">💬 Hacer pedido por WhatsApp</a>
+</div><div class="pets">🐶🐱<small>🐔 🐄 🐴</small></div></div></div>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              600: '#16a34a',
-              700: '#15803d',
-              800: '#166534',
-              900: '#14532d',
-            },
-            accent: {
-              600: '#dc2626',
-              700: '#b91c1c',
-            }
-          },
-          fontFamily: {
-            heading: ['Poppins', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+<section><div class="w"><h2>Compra por especie</h2><p class="sub">Elige para quién es.</p>
+<div class="grid"><a class="cat" href="#perros"><span>🐶</span>Perros</a><a class="cat" href="#gatos"><span>🐱</span>Gatos</a>
+<a class="cat sec" href="#aves"><span>🐔</span>Aves / granja</a><a class="cat sec" href="#ganado"><span>🐄</span>Bovinos / caballos</a></div></div></section>
 
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, .font-heading { font-family: 'Poppins', sans-serif; }
-    .bg-hero {
-      background-color: #15803d;
-      background-image: linear-gradient(160deg, rgba(21,128,61,0.96) 0%, rgba(22,101,52,0.96) 55%, rgba(20,83,45,0.98) 100%);
-    }
-    .bg-pattern {
-      background-image: radial-gradient(rgba(255,255,255,0.10) 1.5px, transparent 1.5px);
-      background-size: 22px 22px;
-    }
-    .bg-hero.bg-pattern {
-      background-image:
-        radial-gradient(rgba(255,255,255,0.10) 1.5px, transparent 1.5px),
-        linear-gradient(160deg, rgba(21,128,61,0.96) 0%, rgba(22,101,52,0.96) 55%, rgba(20,83,45,0.98) 100%);
-      background-size: 22px 22px, auto;
-    }
-  </style>
-</head>
+<section id="perros"><div class="w"><h2>🐶 Perros</h2><p class="sub">Precios de ejemplo — confirma existencia y precio por WhatsApp.</p><div class="grid">
+<div class="card"><div class="im">🦴</div><b>Croqueta adulto 25 kg</b><span class="br">Nupec</span><div class="pr">desde $1,290 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20Nupec%20adulto%2025kg">Pedir</a></div>
+<div class="card"><div class="im">🦴</div><b>Pro Plan adulto 15 kg</b><span class="br">Purina Pro Plan</span><div class="pr">desde $1,650 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20Pro%20Plan%20adulto">Pedir</a></div>
+<div class="card"><div class="im">🍖</div><b>Croqueta cachorro 4 kg</b><span class="br">Carne Fresca</span><div class="pr">desde $320 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20Carne%20Fresca%20cachorro">Pedir</a></div>
+<div class="card"><div class="im">💊</div><b>Desparasitante / pipeta</b><span class="br">Holland · Aranda</span><div class="pr">desde $95 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20desparasitante%20para%20perro">Pedir</a></div>
+</div></div></section>
 
-<body class="bg-white text-gray-800 antialiased">
+<section id="gatos" style="background:#fff"><div class="w"><h2>🐱 Gatos</h2><p class="sub">Precios de ejemplo.</p><div class="grid">
+<div class="card"><div class="im">🐟</div><b>Croqueta gato 7.5 kg</b><span class="br">Purina</span><div class="pr">desde $560 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20croqueta%20gato">Pedir</a></div>
+<div class="card"><div class="im">🐟</div><b>Nupec felino 3 kg</b><span class="br">Nupec</span><div class="pr">desde $430 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20Nupec%20felino">Pedir</a></div>
+<div class="card"><div class="im">🧺</div><b>Arena para gato 10 kg</b><span class="br">Varias marcas</span><div class="pr">desde $150 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20arena%20para%20gato">Pedir</a></div>
+<div class="card"><div class="im">💊</div><b>Vitaminas / antipulgas</b><span class="br">BioZoo · Biochem</span><div class="pr">desde $90 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20antipulgas%20para%20gato">Pedir</a></div>
+</div></div></section>
 
-  <!-- ============ NAVBAR ============ -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-16 sm:h-20">
+<section id="vet"><div class="w"><div class="vet"><h2>🩺 Médico veterinario en tienda</h2>
+<p>Consulta, vacunas, desparasitación y orientación de alimentación para tu mascota, aquí mismo en la forrajera.</p>
+<p>🏠 Visitas a domicilio: <span class="pend">pendiente de confirmar con la tienda</span></p>
+<a class="btn wa" href="https://wa.me/528129140676?text=Quiero%20informes%20del%20veterinario">Preguntar por consulta</a></div></div></section>
 
-        <!-- Logo + nombre -->
-        <a href="#inicio" class="flex items-center gap-2.5 min-w-0">
-          <div class="shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-700 text-white flex items-center justify-center font-heading font-bold text-base sm:text-lg shadow">
-            SB
-          </div>
-          <div class="min-w-0 leading-tight">
-            <p class="font-heading font-bold text-sm sm:text-lg text-brand-800 truncate">
-              Mercado &amp; Forrajera <span class="text-accent-600">San Benito</span>
-            </p>
-            <p class="text-[11px] sm:text-xs text-gray-500 truncate">
-              📍 Sucursal San Roque, Juárez N.L.
-            </p>
-          </div>
-        </a>
+<section id="aves" style="background:#fff"><div class="w"><h2>🐔 Aves / granja</h2><p class="sub">Precios de ejemplo.</p><div class="grid">
+<div class="card"><div class="im">🌽</div><b>Alimento ponedora 40 kg</b><span class="br">Agromás · MNA</span><div class="pr">desde $480 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20alimento%20ponedora">Pedir</a></div>
+<div class="card"><div class="im">🐣</div><b>Iniciador pollito 20 kg</b><span class="br">Purina</span><div class="pr">desde $340 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20iniciador%20pollito">Pedir</a></div>
+<div class="card"><div class="im">🌾</div><b>Maíz quebrado 40 kg</b><span class="br">Granel</span><div class="pr">desde $360 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20maiz%20quebrado">Pedir</a></div>
+<div class="card"><div class="im">🐦</div><b>Alpiste / semillas</b><span class="br">Varias</span><div class="pr">desde $45/kg <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20semillas%20para%20aves">Pedir</a></div>
+</div></div></section>
 
-        <!-- Botones rápidos -->
-        <div class="flex items-center gap-2 shrink-0">
-          <a href="tel:+528140274770"
-             aria-label="Llamar"
-             class="inline-flex items-center justify-center w-10 h-10 sm:w-auto sm:h-auto sm:px-4 sm:py-2 rounded-full sm:rounded-lg border-2 border-brand-700 text-brand-700 hover:bg-brand-50 transition font-semibold text-sm">
-            <svg class="w-5 h-5 sm:hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.01l-2.2 2.21z"/></svg>
-            <span class="hidden sm:inline">Llamar</span>
-          </a>
-          <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="WhatsApp"
-             class="inline-flex items-center justify-center w-10 h-10 sm:w-auto sm:h-auto sm:px-4 sm:py-2 rounded-full sm:rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition font-semibold text-sm shadow">
-            <svg class="w-5 h-5 sm:mr-1.5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.845.744 5.512 2.045 7.825L.06 31.604l7.58-1.988a15.9 15.9 0 008.36 2.376c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.09c-2.688 0-5.19-.79-7.297-2.15l-.523-.32-4.5 1.18 1.2-4.386-.34-.55A13.09 13.09 0 012.909 16.4c0-7.223 5.868-13.09 13.09-13.09S29.09 9.176 29.09 16.4 23.223 29.486 16 29.486zm7.17-9.8c-.39-.196-2.31-1.14-2.67-1.27-.36-.13-.62-.196-.88.196-.26.39-1.01 1.27-1.24 1.53-.23.26-.46.29-.85.098-.39-.196-1.64-.605-3.12-1.925-1.153-1.028-1.932-2.298-2.158-2.688-.226-.39-.024-.6.17-.797.176-.174.39-.454.585-.68.196-.227.26-.39.39-.65.13-.26.065-.487-.033-.683-.098-.196-.88-2.12-1.206-2.905-.318-.762-.642-.658-.88-.67l-.75-.013c-.26 0-.683.098-1.04.487-.357.39-1.365 1.334-1.365 3.253 0 1.918 1.397 3.77 1.592 4.03.196.26 2.75 4.2 6.66 5.888.93.4 1.656.64 2.222.82.933.297 1.782.255 2.454.155.749-.112 2.31-.944 2.635-1.856.325-.912.325-1.694.228-1.856-.098-.163-.358-.26-.748-.455z"/></svg>
-            <span class="hidden sm:inline">WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+<section id="ganado"><div class="w"><h2>🐄 Bovinos / caballos</h2><p class="sub">Precios de ejemplo.</p><div class="grid">
+<div class="card"><div class="im">🐄</div><b>Alimento engorda 40 kg</b><span class="br">MNA · Tornel</span><div class="pr">desde $430 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20alimento%20engorda">Pedir</a></div>
+<div class="card"><div class="im">🐴</div><b>Alimento equino 25 kg</b><span class="br">Purina</span><div class="pr">desde $520 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20alimento%20equino">Pedir</a></div>
+<div class="card"><div class="im">🌾</div><b>Pacas de alfalfa / avena</b><span class="br">Forraje</span><div class="pr">desde $180 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20pacas">Pedir</a></div>
+<div class="card"><div class="im">💉</div><b>Vitaminas y desparasitantes</b><span class="br">Tornel · Aranda</span><div class="pr">desde $150 <small>ejemplo</small></div><a href="https://wa.me/528129140676?text=Quiero%20medicamento%20ganado">Pedir</a></div>
+</div></div></section>
 
-  <!-- ============ HERO ============ -->
-  <section id="inicio" class="relative bg-hero bg-pattern text-white overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-24 relative z-10">
-      <div class="max-w-2xl">
-        <span class="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full mb-5">
-          🌾 Forrajera · Abarrotes · Veterinaria
-        </span>
+<section style="background:#fff"><div class="w"><h2>Marcas que manejamos</h2><div class="brands">
+<span>Purina</span><span>Pro Plan</span><span>Nupec</span><span>Carne Fresca</span><span>Biochem</span><span>Holland</span><span>Aranda</span><span>BioZoo</span><span>Tornel</span><span>Agromás</span><span>MNA</span></div>
+<p class="sub" style="margin-top:14px">También abarrotes y productos veterinarios básicos.</p></div></section>
 
-        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl leading-tight mb-5">
-          Todo para tus animales de granja, mascotas y el hogar en un solo lugar.
-        </h1>
+<section id="envio"><div class="w"><h2>🛵 Envío Guadalupe – Juárez</h2>
+<p>Te llevamos tu pedido a domicilio en Guadalupe y Juárez, NL. Costo aproximado <b>$30 – $50</b> según la zona <span class="pend">tentativo, se confirma al pedir</span>.</p>
+<div class="steps"><div><b>1.</b> Mándanos por WhatsApp qué necesitas.</div><div><b>2.</b> Te confirmamos precio, existencia y envío.</div><div><b>3.</b> Recibe en casa o pasa a la tienda.</div></div>
+<p style="margin-top:18px"><a class="btn wa" href="https://wa.me/528129140676?text=Hola%2C%20quiero%20hacer%20un%20pedido%20con%20envio">💬 Pedir con envío</a></p></div></section>
 
-        <p class="text-brand-50/90 text-base sm:text-lg mb-8">
-          Alimento para gallinas, pollos, ganado y caballos; productos para tu mascota, medicamentos veterinarios y abarrotes regionales. Atendemos mayoreo y menudeo en San Roque, Juárez N.L.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido"
-             target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-green-500 text-white font-bold text-base sm:text-lg px-6 py-4 rounded-xl shadow-lg shadow-black/20 transition transform active:scale-95">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32"><path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.845.744 5.512 2.045 7.825L.06 31.604l7.58-1.988a15.9 15.9 0 008.36 2.376c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.09c-2.688 0-5.19-.79-7.297-2.15l-.523-.32-4.5 1.18 1.2-4.386-.34-.55A13.09 13.09 0 012.909 16.4c0-7.223 5.868-13.09 13.09-13.09S29.09 9.176 29.09 16.4 23.223 29.486 16 29.486zm7.17-9.8c-.39-.196-2.31-1.14-2.67-1.27-.36-.13-.62-.196-.88.196-.26.39-1.01 1.27-1.24 1.53-.23.26-.46.29-.85.098-.39-.196-1.64-.605-3.12-1.925-1.153-1.028-1.932-2.298-2.158-2.688-.226-.39-.024-.6.17-.797.176-.174.39-.454.585-.68.196-.227.26-.39.39-.65.13-.26.065-.487-.033-.683-.098-.196-.88-2.12-1.206-2.905-.318-.762-.642-.658-.88-.67l-.75-.013c-.26 0-.683.098-1.04.487-.357.39-1.365 1.334-1.365 3.253 0 1.918 1.397 3.77 1.592 4.03.196.26 2.75 4.2 6.66 5.888.93.4 1.656.64 2.222.82.933.297 1.782.255 2.454.155.749-.112 2.31-.944 2.635-1.856.325-.912.325-1.694.228-1.856-.098-.163-.358-.26-.748-.455z"/></svg>
-            Hacer pedido por WhatsApp
-          </a>
-
-          <a href="#ubicacion"
-             class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/40 text-white font-semibold text-base px-6 py-4 rounded-xl transition">
-            📍 Ver ubicación
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CATEGORÍAS ============ -->
-  <section id="productos" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-    <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-      <span class="text-accent-600 font-bold text-sm uppercase tracking-wide">Nuestros productos</span>
-      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-brand-900 mt-2">
-        Encuentra todo lo que necesitas
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-
-      <!-- Card 1 -->
-      <div class="group bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-5 sm:p-6">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-50 flex items-center justify-center text-2xl sm:text-3xl mb-4 group-hover:bg-brand-100 transition">
-          🐔
-        </div>
-        <h3 class="font-heading font-semibold text-base sm:text-lg text-brand-900 mb-1.5">
-          Alimento para Granja
-        </h3>
-        <p class="text-sm text-gray-500">
-          Gallinas, ponedoras, pollos, cerdos, ganado y caballos.
-        </p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="group bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-5 sm:p-6">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-50 flex items-center justify-center text-2xl sm:text-3xl mb-4 group-hover:bg-brand-100 transition">
-          🐾
-        </div>
-        <h3 class="font-heading font-semibold text-base sm:text-lg text-brand-900 mb-1.5">
-          Mascotas
-        </h3>
-        <p class="text-sm text-gray-500">
-          Alimento y accesorios para perros y gatos.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="group bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-5 sm:p-6">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-50 flex items-center justify-center text-2xl sm:text-3xl mb-4 group-hover:bg-brand-100 transition">
-          💊
-        </div>
-        <h3 class="font-heading font-semibold text-base sm:text-lg text-brand-900 mb-1.5">
-          Veterinaria
-        </h3>
-        <p class="text-sm text-gray-500">
-          Medicamentos veterinarios y cuidado animal.
-        </p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="group bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-5 sm:p-6">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-50 flex items-center justify-center text-2xl sm:text-3xl mb-4 group-hover:bg-brand-100 transition">
-          🌾
-        </div>
-        <h3 class="font-heading font-semibold text-base sm:text-lg text-brand-900 mb-1.5">
-          Abarrotes y Granos
-        </h3>
-        <p class="text-sm text-gray-500">
-          Granos, semillas y productos regionales.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============ POR QUÉ COMPRAR CON NOSOTROS ============ -->
-  <section id="nosotros" class="bg-brand-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-        <span class="text-accent-600 font-bold text-sm uppercase tracking-wide">Nuestra ventaja</span>
-        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-brand-900 mt-2">
-          ¿Por qué comprar con nosotros?
-        </h2>
-      </div>
-
-      <div class="grid sm:grid-cols-3 gap-6 sm:gap-8">
-        <div class="text-center sm:text-left bg-white rounded-2xl p-6 shadow-sm">
-          <div class="w-12 h-12 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl mb-4 mx-auto sm:mx-0">
-            ⚖️
-          </div>
-          <h3 class="font-heading font-semibold text-lg text-brand-900 mb-2">Mayoreo y menudeo</h3>
-          <p class="text-sm text-gray-600">
-            Compra la cantidad que necesites, ya sea para tu hogar o tu negocio.
-          </p>
-        </div>
-
-        <div class="text-center sm:text-left bg-white rounded-2xl p-6 shadow-sm">
-          <div class="w-12 h-12 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl mb-4 mx-auto sm:mx-0">
-            🤝
-          </div>
-          <h3 class="font-heading font-semibold text-lg text-brand-900 mb-2">Atención personalizada</h3>
-          <p class="text-sm text-gray-600">
-            Te asesoramos para elegir el producto correcto para tus animales.
-          </p>
-        </div>
-
-        <div class="text-center sm:text-left bg-white rounded-2xl p-6 shadow-sm">
-          <div class="w-12 h-12 rounded-full bg-brand-600 text-white flex items-center justify-center text-xl mb-4 mx-auto sm:mx-0">
-            ✅
-          </div>
-          <h3 class="font-heading font-semibold text-lg text-brand-900 mb-2">Variedad y frescura</h3>
-          <p class="text-sm text-gray-600">
-            Amplio surtido de marcas y productos siempre frescos.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ UBICACIÓN Y CONTACTO ============ -->
-  <section id="ubicacion" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-    <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-      <span class="text-accent-600 font-bold text-sm uppercase tracking-wide">Visítanos</span>
-      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-brand-900 mt-2">
-        Ubicación y contacto
-      </h2>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
-
-      <!-- Mapa -->
-      <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 min-h-[280px] sm:min-h-[360px]">
-        <iframe
-          class="w-full h-full min-h-[280px] sm:min-h-[360px]"
-          src="https://www.google.com/maps?q=Carretera+a+San+Roque+Km+2.5%2C+Ju%C3%A1rez%2C+N.L.&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ubicación Mercado y Forrajera San Benito">
-        </iframe>
-      </div>
-
-      <!-- Info de contacto -->
-      <div class="bg-white border border-gray-100 rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col justify-between">
-        <div class="space-y-6">
-
-          <div class="flex gap-4">
-            <div class="shrink-0 w-11 h-11 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center text-lg">
-              📍
-            </div>
-            <div>
-              <h3 class="font-heading font-semibold text-brand-900">Dirección</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Carretera a San Roque Km. 2.5, Juárez, N.L.<br>
-                Sucursal San Roque
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="shrink-0 w-11 h-11 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center text-lg">
-              🕒
-            </div>
-            <div>
-              <h3 class="font-heading font-semibold text-brand-900">Horarios</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Lunes a sábado: 8:00 am – 7:00 pm<br>
-                Domingo: 9:00 am – 2:00 pm
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="shrink-0 w-11 h-11 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center text-lg">
-              📞
-            </div>
-            <div>
-              <h3 class="font-heading font-semibold text-brand-900">Teléfono / WhatsApp</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                81 4027 4770
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-3 mt-8">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Carretera+a+San+Roque+Km+2.5%2C+Ju%C3%A1rez%2C+N.L."
-             target="_blank" rel="noopener noreferrer"
-             class="flex-1 inline-flex items-center justify-center gap-2 bg-accent-600 hover:bg-accent-700 text-white font-semibold text-sm sm:text-base px-5 py-3.5 rounded-xl transition">
-            🧭 Cómo llegar
-          </a>
-          <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido"
-             target="_blank" rel="noopener noreferrer"
-             class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base px-5 py-3.5 rounded-xl transition">
-            💬 Escribir por WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CTA FINAL ============ -->
-  <section class="bg-hero bg-pattern text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
-      <h2 class="font-heading font-bold text-2xl sm:text-3xl mb-3">
-        ¿Listo para hacer tu pedido?
-      </h2>
-      <p class="text-brand-50/90 mb-7 max-w-xl mx-auto">
-        Escríbenos por WhatsApp y te ayudamos con gusto, sin compromiso.
-      </p>
-      <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido"
-         target="_blank" rel="noopener noreferrer"
-         class="inline-flex items-center justify-center gap-2 bg-white text-brand-800 hover:bg-brand-50 font-bold text-base sm:text-lg px-7 py-4 rounded-xl shadow-lg transition transform active:scale-95">
-        💬 Hacer pedido por WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <!-- ============ REDES SOCIALES ============ -->
-  <section id="redes" class="bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 text-center">
-      <span class="text-accent-600 font-bold text-sm uppercase tracking-wide">Mantente en contacto</span>
-      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-brand-900 mt-2 mb-3">
-        Síguenos en redes sociales
-      </h2>
-      <p class="text-gray-500 max-w-xl mx-auto mb-9">
-        Entérate de nuestras promociones, novedades y productos de temporada.
-      </p>
-
-      <div class="flex flex-wrap items-center justify-center gap-4">
-
-        <!-- Facebook -->
-        <a href="#" aria-label="Facebook"
-           class="w-14 h-14 rounded-full bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center shadow-sm transition transform hover:-translate-y-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-6.98H7.96V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.98A10 10 0 0022 12z"/></svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram"
-           class="w-14 h-14 rounded-full bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center shadow-sm transition transform hover:-translate-y-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 01-1.38-.9 3.72 3.72 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.39A5.9 5.9 0 00.62 4.14c-.3.76-.5 1.64-.56 2.91C0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.13a5.9 5.9 0 002.13 1.39c.76.3 1.64.5 2.91.56C8.33 24 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 002.13-1.39 5.9 5.9 0 001.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 00-1.39-2.13A5.9 5.9 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 105.84 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-10.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg>
-        </a>
-
-        <!-- TikTok -->
-        <a href="#" aria-label="TikTok"
-           class="w-14 h-14 rounded-full bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center shadow-sm transition transform hover:-translate-y-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="#" aria-label="LinkedIn"
-           class="w-14 h-14 rounded-full bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center shadow-sm transition transform hover:-translate-y-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 11.02-4.14 2.07 2.07 0 01-.02 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        </a>
-
-        <!-- X (Twitter) -->
-        <a href="#" aria-label="X (Twitter)"
-           class="w-14 h-14 rounded-full bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center shadow-sm transition transform hover:-translate-y-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.24 2H21l-6.55 7.5L22.2 22h-6.14l-4.8-6.28L5.7 22H2.93l7.01-8.02L1.8 2h6.29l4.34 5.74L18.24 2zm-1.08 18.17h1.7L7.02 3.75H5.2l11.96 16.42z"/></svg>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="bg-brand-900 text-brand-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-        <div>
-          <p class="font-heading font-bold text-lg">
-            Mercado &amp; Forrajera <span class="text-accent-600">San Benito</span>
-          </p>
-          <p class="text-sm text-brand-50/70 mt-1">
-            Sucursal San Roque · Carretera a San Roque Km. 2.5, Juárez, N.L.
-          </p>
-        </div>
-        <div class="flex gap-3">
-          <a href="tel:+528140274770" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.01l-2.2 2.21z"/></svg>
-          </a>
-          <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.845.744 5.512 2.045 7.825L.06 31.604l7.58-1.988a15.9 15.9 0 008.36 2.376c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.09c-2.688 0-5.19-.79-7.297-2.15l-.523-.32-4.5 1.18 1.2-4.386-.34-.55A13.09 13.09 0 012.909 16.4c0-7.223 5.868-13.09 13.09-13.09S29.09 9.176 29.09 16.4 23.223 29.486 16 29.486zm7.17-9.8c-.39-.196-2.31-1.14-2.67-1.27-.36-.13-.62-.196-.88.196-.26.39-1.01 1.27-1.24 1.53-.23.26-.46.29-.85.098-.39-.196-1.64-.605-3.12-1.925-1.153-1.028-1.932-2.298-2.158-2.688-.226-.39-.024-.6.17-.797.176-.174.39-.454.585-.68.196-.227.26-.39.39-.65.13-.26.065-.487-.033-.683-.098-.196-.88-2.12-1.206-2.905-.318-.762-.642-.658-.88-.67l-.75-.013c-.26 0-.683.098-1.04.487-.357.39-1.365 1.334-1.365 3.253 0 1.918 1.397 3.77 1.592 4.03.196.26 2.75 4.2 6.66 5.888.93.4 1.656.64 2.222.82.933.297 1.782.255 2.454.155.749-.112 2.31-.944 2.635-1.856.325-.912.325-1.694.228-1.856-.098-.163-.358-.26-.748-.455z"/></svg>
-          </a>
-        </div>
-      </div>
-      <hr class="border-white/10 my-6">
-      <p class="text-xs text-brand-50/60 text-center sm:text-left">
-        © 2026 Mercado &amp; Forrajera San Benito. Todos los derechos reservados.
-      </p>
-    </div>
-  </footer>
-
-  <!-- ============ BOTÓN FLOTANTE WHATSAPP (MÓVIL) ============ -->
-  <a href="https://wa.me/528140274770?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Pedir por WhatsApp"
-     class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-brand-600 hover:bg-brand-700 text-white flex items-center justify-center shadow-xl shadow-black/25 transition transform hover:scale-105 active:scale-95">
-    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 32 32"><path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.845.744 5.512 2.045 7.825L.06 31.604l7.58-1.988a15.9 15.9 0 008.36 2.376c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.09c-2.688 0-5.19-.79-7.297-2.15l-.523-.32-4.5 1.18 1.2-4.386-.34-.55A13.09 13.09 0 012.909 16.4c0-7.223 5.868-13.09 13.09-13.09S29.09 9.176 29.09 16.4 23.223 29.486 16 29.486zm7.17-9.8c-.39-.196-2.31-1.14-2.67-1.27-.36-.13-.62-.196-.88.196-.26.39-1.01 1.27-1.24 1.53-.23.26-.46.29-.85.098-.39-.196-1.64-.605-3.12-1.925-1.153-1.028-1.932-2.298-2.158-2.688-.226-.39-.024-.6.17-.797.176-.174.39-.454.585-.68.196-.227.26-.39.39-.65.13-.26.065-.487-.033-.683-.098-.196-.88-2.12-1.206-2.905-.318-.762-.642-.658-.88-.67l-.75-.013c-.26 0-.683.098-1.04.487-.357.39-1.365 1.334-1.365 3.253 0 1.918 1.397 3.77 1.592 4.03.196.26 2.75 4.2 6.66 5.888.93.4 1.656.64 2.222.82.933.297 1.782.255 2.454.155.749-.112 2.31-.944 2.635-1.856.325-.912.325-1.694.228-1.856-.098-.163-.358-.26-.748-.455z"/></svg>
-  </a>
-
-</body>
-</html>
+<footer><div class="w"><b>Forrajera San Benito</b><br>Carr. a San Roque, Guadalupe – Juárez, NL<br>Tel / WhatsApp: 81 2914 0676<br>
+<a href="https://maps.google.com/?q=Forrajera+San+Benito+Carretera+a+San+Roque+Guadalupe+NL" style="text-decoration:underline">Ver en Google Maps</a><br><br><small>Demo — precios, horarios y servicios a confirmar con la tienda.</small></div></footer>
+<a class="fab" href="https://wa.me/528129140676?text=Hola%20Forrajera%20San%20Benito">💬 WhatsApp</a>
+</body></html>
